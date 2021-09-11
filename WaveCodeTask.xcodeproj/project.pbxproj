@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18D6AB7643C44E0D7DA4A0E1 /* Pods_WaveCodeTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BF79BA626EA37A55F29EC5 /* Pods_WaveCodeTask.framework */; };
+		46EAD39F736BE63E48C77E74 /* Pods_WaveCodeTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA8325B318490A356D9FC14 /* Pods_WaveCodeTaskTests.framework */; };
 		4984E69726EC98F60064BEDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984E69626EC98F60064BEDE /* AppDelegate.swift */; };
 		4984E69B26EC98F60064BEDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984E69A26EC98F60064BEDE /* ViewController.swift */; };
 		4984E6A026EC98F70064BEDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4984E69F26EC98F70064BEDE /* Assets.xcassets */; };
@@ -24,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10A23C6D89950CC9DBF322DB /* Pods-WaveCodeTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveCodeTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-WaveCodeTaskTests/Pods-WaveCodeTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4984E69326EC98F60064BEDE /* WaveCodeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveCodeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4984E69626EC98F60064BEDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4984E69A26EC98F60064BEDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +35,11 @@
 		4984E6A426EC98F70064BEDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4984E6A926EC98F80064BEDE /* WaveCodeTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaveCodeTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4984E6AF26EC98F80064BEDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		498A3D37B30741F23218B53A /* Pods-WaveCodeTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveCodeTaskTests.release.xcconfig"; path = "Target Support Files/Pods-WaveCodeTaskTests/Pods-WaveCodeTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2F4AAFD476248A6224C426A /* Pods-WaveCodeTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveCodeTask.release.xcconfig"; path = "Target Support Files/Pods-WaveCodeTask/Pods-WaveCodeTask.release.xcconfig"; sourceTree = "<group>"; };
+		CFDA609D42D7B9558A7EBD4E /* Pods-WaveCodeTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveCodeTask.debug.xcconfig"; path = "Target Support Files/Pods-WaveCodeTask/Pods-WaveCodeTask.debug.xcconfig"; sourceTree = "<group>"; };
+		D6BF79BA626EA37A55F29EC5 /* Pods_WaveCodeTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaveCodeTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA8325B318490A356D9FC14 /* Pods_WaveCodeTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaveCodeTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D6AB7643C44E0D7DA4A0E1 /* Pods_WaveCodeTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,18 +55,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46EAD39F736BE63E48C77E74 /* Pods_WaveCodeTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0827F2A879C5E3317B67186F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6BF79BA626EA37A55F29EC5 /* Pods_WaveCodeTask.framework */,
+				EAA8325B318490A356D9FC14 /* Pods_WaveCodeTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4984E68A26EC98F60064BEDE = {
 			isa = PBXGroup;
 			children = (
 				4984E69526EC98F60064BEDE /* WaveCodeTask */,
 				4984E6AC26EC98F80064BEDE /* WaveCodeTaskTests */,
 				4984E69426EC98F60064BEDE /* Products */,
+				9D4484BFAB7227B2B4242077 /* Pods */,
+				0827F2A879C5E3317B67186F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +111,18 @@
 			path = WaveCodeTaskTests;
 			sourceTree = "<group>";
 		};
+		9D4484BFAB7227B2B4242077 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFDA609D42D7B9558A7EBD4E /* Pods-WaveCodeTask.debug.xcconfig */,
+				A2F4AAFD476248A6224C426A /* Pods-WaveCodeTask.release.xcconfig */,
+				10A23C6D89950CC9DBF322DB /* Pods-WaveCodeTaskTests.debug.xcconfig */,
+				498A3D37B30741F23218B53A /* Pods-WaveCodeTaskTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4984E6BD26EC98F80064BEDE /* Build configuration list for PBXNativeTarget "WaveCodeTask" */;
 			buildPhases = (
+				71F8FF17B994BF56DC73FDD8 /* [CP] Check Pods Manifest.lock */,
 				4984E68F26EC98F60064BEDE /* Sources */,
 				4984E69026EC98F60064BEDE /* Frameworks */,
 				4984E69126EC98F60064BEDE /* Resources */,
+				A8816736CC4FC793956F33CC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -114,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4984E6C026EC98F80064BEDE /* Build configuration list for PBXNativeTarget "WaveCodeTaskTests" */;
 			buildPhases = (
+				19065F7D527B5820CFEF5DF6 /* [CP] Check Pods Manifest.lock */,
 				4984E6A526EC98F80064BEDE /* Sources */,
 				4984E6A626EC98F80064BEDE /* Frameworks */,
 				4984E6A726EC98F80064BEDE /* Resources */,
+				757D6A3920010D53F6E5FB0B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +220,87 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19065F7D527B5820CFEF5DF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaveCodeTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71F8FF17B994BF56DC73FDD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaveCodeTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		757D6A3920010D53F6E5FB0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaveCodeTaskTests/Pods-WaveCodeTaskTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaveCodeTaskTests/Pods-WaveCodeTaskTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WaveCodeTaskTests/Pods-WaveCodeTaskTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8816736CC4FC793956F33CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaveCodeTask/Pods-WaveCodeTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaveCodeTask/Pods-WaveCodeTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WaveCodeTask/Pods-WaveCodeTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4984E68F26EC98F60064BEDE /* Sources */ = {
@@ -341,6 +459,7 @@
 		};
 		4984E6BE26EC98F80064BEDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFDA609D42D7B9558A7EBD4E /* Pods-WaveCodeTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -361,6 +480,7 @@
 		};
 		4984E6BF26EC98F80064BEDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2F4AAFD476248A6224C426A /* Pods-WaveCodeTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -381,6 +501,7 @@
 		};
 		4984E6C126EC98F80064BEDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10A23C6D89950CC9DBF322DB /* Pods-WaveCodeTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -403,6 +524,7 @@
 		};
 		4984E6C226EC98F80064BEDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 498A3D37B30741F23218B53A /* Pods-WaveCodeTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

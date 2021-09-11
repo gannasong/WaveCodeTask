@@ -1,0 +1,59 @@
+PODS:
+  - Alamofire (5.4.3)
+  - MBProgressHUD (1.2.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - Nuke (9.5.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.2)
+  - RxTest (5.1.3):
+    - RxSwift (~> 5)
+  - SnapKit (5.0.1)
+  - SwiftMessages (9.0.3):
+    - SwiftMessages/App (= 9.0.3)
+  - SwiftMessages/App (9.0.3)
+
+DEPENDENCIES:
+  - MBProgressHUD
+  - Moya/RxSwift
+  - Nuke
+  - RxCocoa
+  - RxTest
+  - SnapKit
+  - SwiftMessages
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - MBProgressHUD
+    - Moya
+    - Nuke
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - RxTest
+    - SnapKit
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  Nuke: 6f400a4ea957e09149ec335a3c6acdcc814d89e4
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
+  RxTest: 937ba521d3f6dca7db49f76cd5d372cfce6091cb
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftMessages: 077f19126c24033fe24042237ecc20261adb46e4
+
+PODFILE CHECKSUM: f3096418e46f1313ac88a450030ce83f7a98efdf
+
+COCOAPODS: 1.10.1

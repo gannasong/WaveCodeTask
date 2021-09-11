@@ -1,0 +1,6 @@
+framework module Pods_WaveCodeTaskTests {
+  umbrella header "Pods-WaveCodeTaskTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
