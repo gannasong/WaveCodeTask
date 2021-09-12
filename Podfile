@@ -7,9 +7,8 @@ target 'WaveCodeTask' do
   pod 'RxCocoa'
   pod 'Nuke'
   pod 'SnapKit'
-  pod 'MBProgressHUD'
   pod 'SwiftMessages'
-	
+  pod 'MBProgressHUD'
 
   # Pods for WaveCodeTask
 

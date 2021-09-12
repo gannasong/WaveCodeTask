@@ -32,6 +32,6 @@ class AppDelegateTests: XCTestCase {
     let topController = rootNavigation?.topViewController
 
     XCTAssertNotNil(rootNavigation, "Expected a navigation controller as root, got \(String(describing: root)) instead")
-    XCTAssertTrue(topController is ViewController, "Expected a search controller as top view controller, got \(String(describing: topController)) instead")
+    XCTAssertTrue(topController is GithubSearchViewController, "Expected a search controller as top view controller, got \(String(describing: topController)) instead")
   }
 }

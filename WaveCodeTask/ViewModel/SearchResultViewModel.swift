@@ -13,6 +13,7 @@ import RxCocoa
 public class SearchResultViewModel: ViewModelType {
   private let disposeBag = DisposeBag()
   private var state: State = State()
+  private let loader: SearchProtocol
 
   public enum SearchType {
     case newSearch(name: String)
@@ -28,6 +29,11 @@ public class SearchResultViewModel: ViewModelType {
   public struct Input {
     public let searchUserTrigger: Observable<SearchType>
     public let cancelTrigger: PublishSubject<Void>
+
+    public init(searchUserTrigger: Observable<SearchType>, cancelTrigger: PublishSubject<Void>) {
+      self.searchUserTrigger = searchUserTrigger
+      self.cancelTrigger = cancelTrigger
+    }
   }
 
   public struct Output {
@@ -35,7 +41,22 @@ public class SearchResultViewModel: ViewModelType {
     public let isLoading: BehaviorRelay<Bool>
     public let canLoadMore: BehaviorRelay<Bool>
     public let loadError: PublishSubject<String>
+
+    public init(list: BehaviorRelay<[User]>, isLoading: BehaviorRelay<Bool>, canLoadMore: BehaviorRelay<Bool>, loadError: PublishSubject<String>) {
+      self.list = list
+      self.isLoading = isLoading
+      self.canLoadMore = canLoadMore
+      self.loadError = loadError
+    }
   }
+
+  // MARK: - Initialization
+
+  public init(loader: SearchProtocol = APIManager.shared) {
+    self.loader = loader
+  }
+
+  // MARK: - Public Methods
 
   public func transform(input: Input) -> Output {
     let list = BehaviorRelay<[User]>(value: [])
@@ -84,7 +105,7 @@ public class SearchResultViewModel: ViewModelType {
   // MARK: - Private Methods
 
   private func requestNextPage(name: String, nextPage: Int = 1) -> Observable<Result<GithubSearchResult, GitHubServiceError>> {
-    return APIManager.shared.searchGithubUser(name: name, page: nextPage)
+    return loader.searchGithubUser(name: name, page: nextPage)
   }
 
   private func updateSearchState(result: GithubSearchResult) {
