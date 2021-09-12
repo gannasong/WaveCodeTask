@@ -24,6 +24,8 @@
 		4984E6DF26EDC4D90064BEDE /* ParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984E6DE26EDC4D90064BEDE /* ParserHelper.swift */; };
 		4984E6E126EDD0DD0064BEDE /* GitHubServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984E6E026EDD0DD0064BEDE /* GitHubServiceError.swift */; };
 		4984E6E326EDD1BB0064BEDE /* GithubSearchEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984E6E226EDD1BB0064BEDE /* GithubSearchEndToEndTests.swift */; };
+		4984E6E626EDD4F30064BEDE /* SearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984E6E526EDD4F30064BEDE /* SearchResultViewModel.swift */; };
+		4984E6E926EDD5150064BEDE /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984E6E826EDD5150064BEDE /* ViewModelType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		4984E6DE26EDC4D90064BEDE /* ParserHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserHelper.swift; sourceTree = "<group>"; };
 		4984E6E026EDD0DD0064BEDE /* GitHubServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubServiceError.swift; sourceTree = "<group>"; };
 		4984E6E226EDD1BB0064BEDE /* GithubSearchEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchEndToEndTests.swift; sourceTree = "<group>"; };
+		4984E6E526EDD4F30064BEDE /* SearchResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewModel.swift; sourceTree = "<group>"; };
+		4984E6E826EDD5150064BEDE /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		498A3D37B30741F23218B53A /* Pods-WaveCodeTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveCodeTaskTests.release.xcconfig"; path = "Target Support Files/Pods-WaveCodeTaskTests/Pods-WaveCodeTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		A2F4AAFD476248A6224C426A /* Pods-WaveCodeTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveCodeTask.release.xcconfig"; path = "Target Support Files/Pods-WaveCodeTask/Pods-WaveCodeTask.release.xcconfig"; sourceTree = "<group>"; };
 		CFDA609D42D7B9558A7EBD4E /* Pods-WaveCodeTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveCodeTask.debug.xcconfig"; path = "Target Support Files/Pods-WaveCodeTask/Pods-WaveCodeTask.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 		4984E69526EC98F60064BEDE /* WaveCodeTask */ = {
 			isa = PBXGroup;
 			children = (
+				4984E6E726EDD5020064BEDE /* Protocol */,
+				4984E6E426EDD4E50064BEDE /* ViewModel */,
 				4984E6CA26ECA0A10064BEDE /* Network */,
 				4984E69626EC98F60064BEDE /* AppDelegate.swift */,
 				4984E69A26EC98F60064BEDE /* ViewController.swift */,
@@ -198,6 +204,22 @@
 				4984E6E026EDD0DD0064BEDE /* GitHubServiceError.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4984E6E426EDD4E50064BEDE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4984E6E526EDD4F30064BEDE /* SearchResultViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4984E6E726EDD5020064BEDE /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				4984E6E826EDD5150064BEDE /* ViewModelType.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		9D4484BFAB7227B2B4242077 /* Pods */ = {
@@ -403,10 +425,12 @@
 				4984E6D626EDB8570064BEDE /* PageInfo.swift in Sources */,
 				4984E6D426EDB83B0064BEDE /* GithubSearchResult.swift in Sources */,
 				4984E6DF26EDC4D90064BEDE /* ParserHelper.swift in Sources */,
+				4984E6E626EDD4F30064BEDE /* SearchResultViewModel.swift in Sources */,
 				4984E6E126EDD0DD0064BEDE /* GitHubServiceError.swift in Sources */,
 				4984E6D026ECA1730064BEDE /* GitHubAPI.swift in Sources */,
 				4984E69726EC98F60064BEDE /* AppDelegate.swift in Sources */,
 				4984E6D726EDB8990064BEDE /* User.swift in Sources */,
+				4984E6E926EDD5150064BEDE /* ViewModelType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
