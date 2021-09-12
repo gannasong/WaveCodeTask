@@ -11,6 +11,8 @@ public struct User: Decodable, Hashable {
   public let login: String
   public let avatar_url: String
 
+  // MARK: - Initialization
+  
   public init(login: String, avatar_url: String) {
     self.login = login
     self.avatar_url = avatar_url
