@@ -14,6 +14,8 @@
 		4984E6A026EC98F70064BEDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4984E69F26EC98F70064BEDE /* Assets.xcassets */; };
 		4984E6A326EC98F70064BEDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4984E6A126EC98F70064BEDE /* LaunchScreen.storyboard */; };
 		4984E6C826EC9E230064BEDE /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984E6C726EC9E230064BEDE /* AppDelegateTests.swift */; };
+		4984E6CD26ECA0F10064BEDE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984E6CC26ECA0F10064BEDE /* User.swift */; };
+		4984E6D026ECA1730064BEDE /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984E6CF26ECA1730064BEDE /* GitHubAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 		4984E6A926EC98F80064BEDE /* WaveCodeTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaveCodeTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4984E6AF26EC98F80064BEDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4984E6C726EC9E230064BEDE /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
+		4984E6CC26ECA0F10064BEDE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4984E6CF26ECA1730064BEDE /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		498A3D37B30741F23218B53A /* Pods-WaveCodeTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveCodeTaskTests.release.xcconfig"; path = "Target Support Files/Pods-WaveCodeTaskTests/Pods-WaveCodeTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		A2F4AAFD476248A6224C426A /* Pods-WaveCodeTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveCodeTask.release.xcconfig"; path = "Target Support Files/Pods-WaveCodeTask/Pods-WaveCodeTask.release.xcconfig"; sourceTree = "<group>"; };
 		CFDA609D42D7B9558A7EBD4E /* Pods-WaveCodeTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveCodeTask.debug.xcconfig"; path = "Target Support Files/Pods-WaveCodeTask/Pods-WaveCodeTask.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 		4984E69526EC98F60064BEDE /* WaveCodeTask */ = {
 			isa = PBXGroup;
 			children = (
+				4984E6CA26ECA0A10064BEDE /* Network */,
 				4984E69626EC98F60064BEDE /* AppDelegate.swift */,
 				4984E69A26EC98F60064BEDE /* ViewController.swift */,
 				4984E69F26EC98F70064BEDE /* Assets.xcassets */,
@@ -108,6 +113,7 @@
 		4984E6AC26EC98F80064BEDE /* WaveCodeTaskTests */ = {
 			isa = PBXGroup;
 			children = (
+				4984E6C926ECA0830064BEDE /* Networking */,
 				4984E6C626EC9DCE0064BEDE /* AppDelegate */,
 				4984E6AF26EC98F80064BEDE /* Info.plist */,
 			);
@@ -120,6 +126,38 @@
 				4984E6C726EC9E230064BEDE /* AppDelegateTests.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		4984E6C926ECA0830064BEDE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4984E6CA26ECA0A10064BEDE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4984E6CE26ECA14B0064BEDE /* Manager */,
+				4984E6CB26ECA0E20064BEDE /* Models */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4984E6CB26ECA0E20064BEDE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4984E6CC26ECA0F10064BEDE /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4984E6CE26ECA14B0064BEDE /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4984E6CF26ECA1730064BEDE /* GitHubAPI.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		9D4484BFAB7227B2B4242077 /* Pods */ = {
@@ -319,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4984E69B26EC98F60064BEDE /* ViewController.swift in Sources */,
+				4984E6D026ECA1730064BEDE /* GitHubAPI.swift in Sources */,
 				4984E69726EC98F60064BEDE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4984E6CD26ECA0F10064BEDE /* User.swift in Sources */,
 				4984E6C826EC9E230064BEDE /* AppDelegateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
