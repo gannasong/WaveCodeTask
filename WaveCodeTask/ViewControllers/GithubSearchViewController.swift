@@ -67,7 +67,7 @@ final class GithubSearchViewController: UIViewController {
     fatalError("init(coder:) has not been implemented")
   }
 
-  override func viewDidLoad() {
+  public override func viewDidLoad() {
     super.viewDidLoad()
     title = "Github Search"
     sutupSubview()

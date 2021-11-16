@@ -149,7 +149,7 @@
 		4984E6AC26EC98F80064BEDE /* WaveCodeTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				4984E6FA26EE04DE0064BEDE /* Models */,
+				4984E6FA26EE04DE0064BEDE /* Model */,
 				4984E6F726EDF4340064BEDE /* Utils */,
 				4984E6C926ECA0830064BEDE /* Networking */,
 				4984E6C626EC9DCE0064BEDE /* AppDelegate */,
@@ -272,12 +272,12 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		4984E6FA26EE04DE0064BEDE /* Models */ = {
+		4984E6FA26EE04DE0064BEDE /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				4984E6FB26EE04F70064BEDE /* SearchResultViewModelTests.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9D4484BFAB7227B2B4242077 /* Pods */ = {
